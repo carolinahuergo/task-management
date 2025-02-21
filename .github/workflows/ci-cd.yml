@@ -58,8 +58,10 @@ jobs:
 
       - name: Run migrations
         run: |
-          python backend/manage.py migrate
+          cd backend
+          python manage.py migrate
 
       - name: Run tests
         run: |
-          python backend/manage.py test
+          cd backend
+          python manage.py test
