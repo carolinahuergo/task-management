@@ -14,8 +14,8 @@ services:
 
   web:
     build:
-      context: ./backend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./backend/Dockerfile
     depends_on:
       - postgres
     env_file:
